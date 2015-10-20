@@ -1,0 +1,17 @@
+[user]
+	name = Timothy Gu
+	email = timothygu99@gmail.com
+[push]
+	default = simple
+[commit]
+	gpgsign = true
+[sendemail]
+	smtpencryption = tls
+	smtpserver = smtp.gmail.com
+	smtpuser = timothygu99@gmail.com
+	smtpserverport = 587
+[url "git@github.com:"]
+	pushInsteadOf = git://github.com/
+	pushInsteadOf = https://github.com/
+[http]
+	# proxy = http://user:pass@localhost:10000
