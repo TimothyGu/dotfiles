@@ -13,7 +13,7 @@ call plug#begin('~/.local/share/nvim/plugins')
 Plug 'editorconfig/editorconfig-vim'
 Plug 'tmsvg/pear-tree'
 Plug 'tomtom/tcomment_vim'
-Plug 'altercation/vim-colors-solarized'
+Plug 'lifepillar/vim-solarized8'
 Plug 'tpope/vim-sleuth'
 Plug 'wlangstroth/vim-racket'
 Plug 'KeitaNakamura/tex-conceal.vim', {'for': 'tex'}
@@ -42,7 +42,7 @@ set termguicolors
 
 set background=dark
 " set bg=light
-colorscheme solarized
+colorscheme solarized8
 set lazyredraw
 
 set cursorline
