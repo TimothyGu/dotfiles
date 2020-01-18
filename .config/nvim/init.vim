@@ -36,8 +36,6 @@ let g:pear_tree_smart_backspace = 1
 
 let g:deoplete#enable_at_startup = 1
 
-set conceallevel=2
-
 set termguicolors
 
 set background=dark
