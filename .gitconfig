@@ -13,5 +13,9 @@
 [url "git@github.com:"]
 	pushInsteadOf = git://github.com/
 	pushInsteadOf = https://github.com/
+[url "git@gitlab.freedesktop.org:"]
+	pushInsteadOf = https://gitlab.freedesktop.org/
+[url "aur@aur.archlinux.org:"]
+	pushInsteadOf = https://aur.archlinux.org/
 [http]
 	# proxy = http://user:pass@localhost:10000
