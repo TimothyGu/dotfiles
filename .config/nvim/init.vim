@@ -38,8 +38,8 @@ let g:deoplete#enable_at_startup = 1
 
 set termguicolors
 
-set background=dark
-" set bg=light
+" set background=dark
+set bg=light
 colorscheme solarized8
 set lazyredraw
 
