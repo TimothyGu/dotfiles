@@ -1,0 +1,60 @@
+schemes:
+  gnome-light: &gnome-light
+    primary:
+      foreground: '#171421'
+      background: '#ffffff'
+
+    normal:
+      black:   '#171421'
+      red:     '#c01c28'
+      green:   '#26a269'
+      yellow:  '#a2734c'
+      blue:    '#12488b'
+      magenta: '#a347ba'
+      cyan:    '#2aa1b3'
+      white:   '#d0cfcc'
+
+    bright:
+      black:   '#5e5c64'
+      red:     '#f66151'
+      green:   '#33d17a'
+      yellow:  '#e9ad0c'
+      blue:    '#2a7bde'
+      magenta: '#c061cb'
+      cyan:    '#33c7de'
+      white:   '#ffffff'
+
+  # Colors (Tango)
+  tango-light: &tango-light
+    primary:
+      background: '#2E3436'
+      foreground: '#D3D7CF'
+
+    # Normal colors
+    normal:
+        black:   '#2e3436'
+        red:     '#cc0000'
+        green:   '#73d216'
+        yellow:  '#edd400'
+        blue:    '#3465a4'
+        magenta: '#75507b'
+        cyan:    '#06989a'
+        white:   '#d3d7cf'
+
+    # Bright colors
+    bright:
+        black:   '#2e3436'
+        red:     '#ef2929'
+        green:   '#8ae234'
+        yellow:  '#fce94f'
+        blue:    '#729fcf'
+        magenta: '#ad7fa8'
+        cyan:    '#34e2e2'
+        white:   '#eeeeec'
+
+colors: *tango-light
+
+font:
+  size: 13
+  normal:
+    family: Hack
