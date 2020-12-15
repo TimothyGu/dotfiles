@@ -18,6 +18,7 @@ Plug 'tmsvg/pear-tree'
 Plug 'tomtom/tcomment_vim'
 Plug 'lifepillar/vim-solarized8'
 Plug 'tpope/vim-sleuth'
+Plug 'tpope/vim-fugitive'
 Plug 'wlangstroth/vim-racket'
 Plug 'KeitaNakamura/tex-conceal.vim', {'for': 'tex'}
 Plug 'rust-lang/rust.vim'
@@ -30,6 +31,9 @@ else
   Plug 'roxma/vim-hug-neovim-rpc'
 endif
 Plug 'copy/deoplete-ocaml'
+
+Plug '~/dev/cr/v8/v8/tools/torque/vim-torque'
+
 call plug#end()
 
 let g:pear_tree_repeatable_expand = 0
