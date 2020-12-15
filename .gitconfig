@@ -1,6 +1,7 @@
 [user]
 	name = Timothy Gu
 	email = timothygu99@gmail.com
+	signingkey = 7FE6B095B582B0D4!
 [push]
 	default = simple
 [commit]
@@ -18,4 +19,7 @@
 [url "aur@aur.archlinux.org:"]
 	pushInsteadOf = https://aur.archlinux.org/
 [http]
+	cookiefile = /home/timothy-gu/.gitcookies
 	# proxy = http://user:pass@localhost:10000
+[pull]
+	rebase = false

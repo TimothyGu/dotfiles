@@ -1,3 +1,6 @@
+let g:python_host_prog='/usr/bin/python2'
+let g:python3_host_prog='/usr/bin/python3'
+
 if empty(glob('~/.local/share/nvim/site/autoload/plug.vim'))
   silent !curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs
     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -38,8 +41,7 @@ let g:deoplete#enable_at_startup = 1
 
 set termguicolors
 
-" set background=dark
-set bg=light
+set background=light
 colorscheme solarized8
 set lazyredraw
 
