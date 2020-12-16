@@ -31,52 +31,52 @@ schemes:
 
     # Normal colors
     normal:
-        black:   '#2e3436'
-        red:     '#cc0000'
-        green:   '#73d216'
-        yellow:  '#edd400'
-        blue:    '#3465a4'
-        magenta: '#75507b'
-        cyan:    '#06989a'
-        white:   '#d3d7cf'
+      black:   '#2e3436'
+      red:     '#cc0000'
+      green:   '#73d216'
+      yellow:  '#edd400'
+      blue:    '#3465a4'
+      magenta: '#75507b'
+      cyan:    '#06989a'
+      white:   '#d3d7cf'
 
     # Bright colors
     bright:
-        black:   '#2e3436'
-        red:     '#ef2929'
-        green:   '#8ae234'
-        yellow:  '#fce94f'
-        blue:    '#729fcf'
-        magenta: '#ad7fa8'
-        cyan:    '#34e2e2'
-        white:   '#eeeeec'
+      black:   '#2e3436'
+      red:     '#ef2929'
+      green:   '#8ae234'
+      yellow:  '#fce94f'
+      blue:    '#729fcf'
+      magenta: '#ad7fa8'
+      cyan:    '#34e2e2'
+      white:   '#eeeeec'
 
   tango-light: &tango-light
     primary:
-      foreground: '#171421'
-      background: '#ffffff'
+      foreground: '#2e3436'
+      background: '#eeeeec'
 
     # Normal colors
     normal:
-        black:   '#2e3436'
-        red:     '#cc0000'
-        green:   '#73d216'
-        yellow:  '#edd400'
-        blue:    '#3465a4'
-        magenta: '#75507b'
-        cyan:    '#06989a'
-        white:   '#d3d7cf'
+      black:   '#2e3436'
+      red:     '#cc0000'
+      green:   '#73d216'
+      yellow:  '#a2834c'
+      blue:    '#3465a4'
+      magenta: '#75507b'
+      cyan:    '#06989a'
+      white:   '#d3d7cf'
 
     # Bright colors
     bright:
-        black:   '#2e3436'
-        red:     '#ef2929'
-        green:   '#8ae234'
-        yellow:  '#fce94f'
-        blue:    '#729fcf'
-        magenta: '#ad7fa8'
-        cyan:    '#34e2e2'
-        white:   '#eeeeec'
+      black:   '#2e3436'
+      red:     '#ef2929'
+      green:   '#8ae234'
+      yellow:  '#fce94f'
+      blue:    '#729fcf'
+      magenta: '#ad7fa8'
+      cyan:    '#34e2e2'
+      white:   '#eeeeec'
 
 colors: *tango-light
 
