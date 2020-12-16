@@ -19,6 +19,8 @@ Plug 'tomtom/tcomment_vim'
 Plug 'lifepillar/vim-solarized8'
 Plug 'tpope/vim-sleuth'
 Plug 'tpope/vim-fugitive'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'wlangstroth/vim-racket'
 Plug 'KeitaNakamura/tex-conceal.vim', {'for': 'tex'}
 Plug 'rust-lang/rust.vim'
@@ -42,6 +44,8 @@ let g:pear_tree_smart_closers = 1
 let g:pear_tree_smart_backspace = 1
 
 let g:deoplete#enable_at_startup = 1
+
+let g:airline_powerline_fonts = 1
 
 set termguicolors
 
