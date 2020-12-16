@@ -53,8 +53,12 @@ schemes:
 
   tango-light: &tango-light
     primary:
-      foreground: '#2e3436'
-      background: '#eeeeec'
+      # Color from Solarized
+      foreground: '#657b83'
+      background: '#fdf6e3'
+      # Color from Manjaro
+      # foreground: '#2e3436'
+      # background: '#eeeeec'
 
     # Normal colors
     normal:

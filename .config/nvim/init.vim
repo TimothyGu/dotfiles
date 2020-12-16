@@ -21,6 +21,7 @@ Plug 'tpope/vim-sleuth'
 Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'edkolev/tmuxline.vim'
 Plug 'wlangstroth/vim-racket'
 Plug 'KeitaNakamura/tex-conceal.vim', {'for': 'tex'}
 Plug 'rust-lang/rust.vim'
