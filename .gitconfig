@@ -23,3 +23,5 @@
 	# proxy = http://user:pass@localhost:10000
 [pull]
 	rebase = false
+[init]
+	defaultBranch = main

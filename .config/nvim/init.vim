@@ -34,6 +34,7 @@ else
   Plug 'roxma/vim-hug-neovim-rpc'
 endif
 Plug 'copy/deoplete-ocaml'
+Plug 'HerringtonDarkholme/yats.vim', {'for': 'typescript'}
 
 Plug '~/dev/cr/v8/v8/tools/torque/vim-torque'
 
@@ -67,6 +68,7 @@ nmap <Leader><CR> O<Esc>
 set mouse=a
 
 autocmd BufWritePre,BufRead *.mjs set filetype=javascript
+autocmd BufWritePre,BufRead *.jbuilder set filetype=ruby
 
 if exists('+termguicolors')
   let &t_8f="\<Esc>[38;2;%lu;%lu;%lum"
