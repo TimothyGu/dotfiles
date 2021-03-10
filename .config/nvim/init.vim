@@ -19,6 +19,7 @@ Plug 'tomtom/tcomment_vim'
 Plug 'lifepillar/vim-solarized8'
 Plug 'tpope/vim-sleuth'
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-surround'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'edkolev/tmuxline.vim'
@@ -64,11 +65,34 @@ set relativenumber
 let mapleader = ","
 nmap <Leader><CR> O<Esc>
 
-" set hlsearch
+set hlsearch
 set mouse=a
 
 autocmd BufWritePre,BufRead *.mjs set filetype=javascript
 autocmd BufWritePre,BufRead *.jbuilder set filetype=ruby
+
+" https://github.com/dense-analysis/ale/issues/1645#issuecomment-396414319
+function ALELSPMappings()
+  let l:lsp_found=0
+  for l:linter in ale#linter#Get(&filetype)
+    if !empty(l:linter.lsp)
+      let l:lsp_found=1
+    endif
+  endfor
+  if (l:lsp_found)
+    nnoremap <buffer> <C-]> :ALEGoToDefinition<CR>
+    nnoremap <buffer> <C-^> :ALEFindReferences<CR>
+  else
+    silent! unmap <buffer> <C-]>
+    silent! unmap <buffer> <C-^>
+  endif
+endfunction
+autocmd BufRead,FileType * call ALELSPMappings()
+
+" Use <C-L> to clear the highlighting of :set hlsearch.
+if maparg('<C-L>', 'n') ==# ''
+  nnoremap <silent> <C-L> :nohlsearch<C-R>=has('diff')?'<Bar>diffupdate':''<CR><CR><C-L>
+endif
 
 if exists('+termguicolors')
   let &t_8f="\<Esc>[38;2;%lu;%lu;%lum"
