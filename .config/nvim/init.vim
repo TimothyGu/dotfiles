@@ -8,7 +8,7 @@ if empty(glob('~/.local/share/nvim/site/autoload/plug.vim'))
 endif
 
 if executable('opam')
-  let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
+  let g:opamshare = substitute(system('opam var share'),'\n$','','''')
   execute "set rtp+=" . g:opamshare . "/merlin/vim"
 endif
 
@@ -48,12 +48,19 @@ let g:pear_tree_smart_backspace = 1
 
 let g:deoplete#enable_at_startup = 1
 
-let g:airline_powerline_fonts = 1
+if $TERM !=# 'linux'
+  let g:airline_powerline_fonts = 1
+  if exists('+termguicolors')
+    let &t_8f="\<Esc>[38;2;%lu;%lu;%lum"
+    let &t_8b="\<Esc>[48;2;%lu;%lu;%lum"
+    set termguicolors
+  endif
+  set background=light
+  colorscheme solarized8
+else
+  let g:airline_symbols_ascii = 1
+endif
 
-set termguicolors
-
-set background=light
-colorscheme solarized8
 set lazyredraw
 
 set cursorline
@@ -92,10 +99,4 @@ autocmd BufRead,FileType * call ALELSPMappings()
 " Use <C-L> to clear the highlighting of :set hlsearch.
 if maparg('<C-L>', 'n') ==# ''
   nnoremap <silent> <C-L> :nohlsearch<C-R>=has('diff')?'<Bar>diffupdate':''<CR><CR><C-L>
-endif
-
-if exists('+termguicolors')
-  let &t_8f="\<Esc>[38;2;%lu;%lu;%lum"
-  let &t_8b="\<Esc>[48;2;%lu;%lu;%lum"
-  set termguicolors
 endif
