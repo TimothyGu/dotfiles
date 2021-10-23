@@ -1,1 +1,10 @@
 add_newline = false
+
+[aws]
+disabled = true
+
+[git_status]
+disabled = true
+
+[hg_branch]
+disabled = true
