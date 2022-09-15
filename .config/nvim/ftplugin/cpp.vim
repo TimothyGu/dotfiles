@@ -1,5 +1,5 @@
 let b:ale_fixers = ['clang-format']
-let b:ale_linters = ['clang', 'clangtidy']
+let b:ale_linters = ['cc', 'clangd']
 
 if executable('clang-9')
   let b:ale_c_clang_executable = 'clang-9'
@@ -19,10 +19,8 @@ if executable('clang++-9')
   let b:ale_cpp_clang_executable = 'clang++-9'
 end
 
-let b:ale_c_clang_options = '-std=c11 -Wall'
 let b:ale_c_clangformat_options = '-style=Google'
 let b:ale_c_clangtidy_options = '-std=c11'
-let b:ale_c_gcc_options = '-std=c11 -Wall'
-let b:ale_cpp_clang_options = '-std=c++17 -Wall'
-let b:ale_cpp_clangtidy_options = '-std=c++17'
-let b:ale_cpp_gcc_options = '-std=c++17 -Wall'
+let b:ale_c_cc_options = '-std=c11 -Wall'
+let b:ale_cpp_clangtidy_options = '-std=c++20'
+let b:ale_cpp_cc_options = '-std=c++20 -Wall'
